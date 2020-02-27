@@ -1,0 +1,59 @@
+8.17 (Dice Rolling) Write an app to simulate the rolling of two dice. The app should use an object of class Random once to roll the first die and again to roll the second die. The sum of the two values should then be calculated. Each die can show an integer value from 1 to 6, so the sum of the values will vary from 2 to 12, with 7 being the most frequent sum and 2 and 12 the least frequent sums. Figure 8.26 shows the 36 possible combinations of the two dice. Your app should roll the dice 36,000 times. Use a one-dimensional array to tally the number of times each possible sum appears. Display the results in tabular format. Determine whether the totals are reasonable (e.g., there are six ways to roll a 7, so approximately one-sixth of the rolls should be 7).
+
+
+
+8.19 (Airline Reservations System) A small airline has just purchased a computer for its new automated reservations system. You have been asked to develop the new system. You’re to write an app to assign seats on each flight of the airline’s only plane (capacity: 10 seats).
+
+Display the following alternatives: Please type 1 for First Class and Please type 2 for Economy. If the user types 1, your app should assign a seat in the first-class section (seats 1–5). If the user types 2, your app should assign a seat in the economy section (seats 6–10).
+
+Use a one-dimensional array of type bool to represent the seating chart of the plane. Initialize all the elements of the array to false to indicate that all the seats are empty. As each seat is assigned, set the corresponding element of the array to true to indicate that the seat is no longer available.
+
+Your app should never assign a seat that has already been assigned. When the economy section is full, your app should ask the person if it’s acceptable to be placed in the first-class section (and vice versa). If yes, make the appropriate seat assignment. If no, display the message "Next flight leaves in 3 hours."
+
+
+8.20 (Total Sales) Use a rectangular array to solve the following problem: A company has three salespeople (1 to 3) who sell five different products (1 to 5). Once a day, each salesperson passes in a slip for each type of product sold. Each slip contains the following:
+
+The salesperson number
+
+The product number
+
+The total dollar value of that product sold that day
+
+Thus, each salesperson passes in between 0 and 5 sales slips per day. Assume that the information from all of the slips for last month is available. Write an app that will read all the information for last month’s sales and summarize the total sales by salesperson and by product. All totals should be stored in rectangular array sales. After processing all the information for last month, display the results in tabular format, with each column representing a particular salesperson and each row representing a particular product. Cross-total each row to get the total sales of each product for last month. Cross-total each column to get the total sales by salesperson for last month. Your tabular output should include these cross-totals to the right of the totaled rows and below the totaled columns.
+
+
+
+8.34 (Polling) The Internet and the web are enabling more people to network, join a cause, voice opinions, and so on. The presidential candidates in 2012 used the Internet intensively to get out their messages and raise money for their campaigns. In this exercise, you’ll write a simple polling program that allows users to rate five social-consciousness issues from 1 (least important) to 10 (most important). Pick five causes that are important to you (for example, political issues, global environmental issues). Use a one-dimensional array topics (of type String) to store the five causes. To summarize the survey responses, use a 5-row, 10-column two-dimensional array responses (of type int), each row corresponding to an element in the topics array. When the program runs, it should ask the user to rate each issue. Have your friends and family respond to the survey. Then have the program display a summary of the results, including:
+
+A tabular report with the five topics down the left side and the 10 ratings across the top, listing in each column the number of ratings received for each topic.
+
+To the right of each row, show the average of the ratings for that issue.
+
+Which issue received the highest point total? Display both the issue and the point total.
+
+Which issue received the lowest point total? Display both the issue and the point total.
+
+
+9.3 (Querying an Array of Invoice Objects) Use the class Invoice provided in the ex09_03 folder with this chapter’s examples to create an array of Invoice objects. Use the sample data shown in Fig. 9.8. Class Invoice includes four properties—a PartNumber (type int), a PartDescription (type string), a Quantity of the item being purchased (type int) and a Price (type decimal). Perform the following queries on the array of Invoice objects and display the results:
+
+Use LINQ to sort the Invoice objects by PartDescription.
+
+Use LINQ to sort the Invoice objects by Price.
+
+Use LINQ to select the PartDescription and Quantity and sort the results by Quantity.
+
+Use LINQ to select from each Invoice the PartDescription and the value of the Invoice (i.e., Quantity * Price). Name the calculated column InvoiceTotal. Order the results by Invoice value. [Hint: Use let to store the result of Quantity * Price in a new range variable total.]
+
+Using the results of the LINQ query in part (d), select the InvoiceTotals in the range $200 to $500.
+
+
+9.4 (Duplicate Word Removal) Write a console app that inputs a sentence from the user (assume no punctuation), then determines and displays the nonduplicate words in alphabetical order. Treat uppercase and lowercase letters the same. [Hint: You can use string method Split with no arguments, as in sentence.Split(), to break a sentence into an array of strings containing the individual words. By default, Split uses spaces as delimiters. Use string method ToLower before calling Split.]
+
+
+9.5 (Sorting Letters and Removing Duplicates) Write a console app that inserts 30 random letters into a List<char>. Perform the following queries on the List and display your results: [Hint: Strings can be indexed like arrays to access a character at a specific index.]
+
+Use LINQ to sort the List in ascending order.
+
+Use LINQ to sort the List in descending order.
+
+Display the List in ascending order with duplicates removed.
