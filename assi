@@ -61,3 +61,9 @@ Display the List in ascending order with duplicates removed.
 
 
 10.3 (Rectangle Class) Create class Rectangle. The class has attributes length and width, each of which defaults to 1. It has read-only properties that calculate the Perimeter and the Area of the rectangle. It has properties for both length and width. The set accessors should verify that length and width are each floating-point numbers greater than 0.0 and less than 20.0. Write an app to test class Rectangle.
+
+
+
+10.5 (Savings-Account Class) Create the class SavingsAccount. Use the static read-write property AnnualInterestRate to store the annual interest rate for all account holders. Each object of the class contains a property SavingsBalance, indicating the amount the saver currently has on deposit. Provide method CalculateMonthlyInterest to calculate the monthly interest by multiplying the SavingsBalance by AnnualInterestRate divided by 12—this interest should be added to savings-Balance. Write an app to test class SavingsAccount. Create two savingsAccount objects, saver1 and saver2, with balances of $2000.00 and $3000.00, respectively. Set AnnualInterestRate to 4%, then calculate the monthly interest and display the new balances for both savers. Then set the AnnualInterestRate to 5%, calculate the next month’s interest and display the new balances for both savers.
+
+
