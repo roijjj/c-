@@ -85,3 +85,5 @@ incrementing into the next hour.
 
 incrementing into the next day (i.e., 11:59:59 PM to 12:00:00 AM).
 
+
+10.12 (Enhanced ComplexNumberClass) Enhance class ComplexNumber (Fig. 10.14) with overloaded == and != operators that enable you to compare complex numbers for equality and inequality. Each overloaded-operator method should return a bool. Test your new overloaded operators.
