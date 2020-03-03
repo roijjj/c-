@@ -67,3 +67,8 @@ Display the List in ascending order with duplicates removed.
 10.5 (Savings-Account Class) Create the class SavingsAccount. Use the static read-write property AnnualInterestRate to store the annual interest rate for all account holders. Each object of the class contains a property SavingsBalance, indicating the amount the saver currently has on deposit. Provide method CalculateMonthlyInterest to calculate the monthly interest by multiplying the SavingsBalance by AnnualInterestRate divided by 12—this interest should be added to savings-Balance. Write an app to test class SavingsAccount. Create two savingsAccount objects, saver1 and saver2, with balances of $2000.00 and $3000.00, respectively. Set AnnualInterestRate to 4%, then calculate the monthly interest and display the new balances for both savers. Then set the AnnualInterestRate to 5%, calculate the next month’s interest and display the new balances for both savers.
 
 
+10.6 (Enhancing Class Date) Modify class Date of Fig. 10.7 to perform error checking on the initializer values for instance variables month, day and year (class Date currently validates only the month and day). You’ll need to convert the auto-implemented property Year into instance variable year with an associated Year property. Provide method NextDay to increment the day by 1. The Date object should always maintain valid data and throw exceptions when attempts are made to set invalid values. Write an app that tests the NextDay method in a loop that displays the date during each iteration of the loop to illustrate that the NextDay method works correctly. Test the following cases:
+
+incrementing to the next month and
+
+incrementing to the next year.
